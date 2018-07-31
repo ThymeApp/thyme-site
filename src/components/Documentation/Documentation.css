@@ -1,0 +1,9 @@
+.Documentation .segment {
+    padding: 2em 0;
+}
+
+.Documentation-Button .icon {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}

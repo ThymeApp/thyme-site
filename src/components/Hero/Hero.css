@@ -1,0 +1,19 @@
+#Thyme-Header {
+    align-items: center;
+    background-color: #00b5ad;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
+    max-height: 700px;
+}
+
+#Thyme-Header .text.container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+}

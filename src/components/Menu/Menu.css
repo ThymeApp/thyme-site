@@ -1,0 +1,11 @@
+.ui.secondary.pointing.menu .item.logo {
+    padding: 0 1em 0.4em 0;
+}
+
+.menu .item.logo svg {
+    height: 28px;
+}
+
+.ui.menu:not(.vertical) .left.menu {
+    margin-right: 0!important;
+}
