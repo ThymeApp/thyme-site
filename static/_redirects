@@ -1,1 +1,2 @@
 /thyme/*  https://thyme.netlify.com/:splat  200
+/service-worker.js  https://thyme.netlify.com/service-worker.js  200
