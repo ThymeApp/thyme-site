@@ -40,7 +40,13 @@ const Hero = () => (
       >
         Dead Simple Time Logging
       </Header>
-      <Button primary size="massive" style={{ margin: '0 auto' }}>
+      <Button
+        as="a"
+        href="/thyme"
+        primary
+        size="massive"
+        style={{ margin: '0 auto' }}
+      >
         Start Tracking
       </Button>
     </Container>

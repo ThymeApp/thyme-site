@@ -11,7 +11,7 @@ const TryNow = () => (
   <Segment className="TryNow" vertical inverted color="teal">
     <Container>
       <Header inverted as="h2">Try Thyme, no sign-up required!</Header>
-      <Button size="massive" secondary>Get Started</Button>
+      <Button size="massive" as="a" href="/thyme" secondary>Get Started</Button>
     </Container>
   </Segment>
 );

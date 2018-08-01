@@ -70,7 +70,7 @@ class TopMenu extends Component {
               </Menu.Item>
               <Menu.Item as="a" href="mailto:support@usethyme.com">Support</Menu.Item>
               <Menu.Item as="a" href="https://github.com/Gaya/thyme">Project's Source</Menu.Item>
-              <Menu.Item as="a" href="/app">Use Thyme</Menu.Item>
+              <Menu.Item as="a" href="/thyme">Use Thyme</Menu.Item>
             </Menu.Menu>
           </Container>
         </Menu>
