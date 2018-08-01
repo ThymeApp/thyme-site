@@ -5,8 +5,7 @@ import Helmet from 'react-helmet';
 import 'semantic-ui-css/semantic.min.css';
 
 import Footer from '../components/Footer/Footer';
-
-import './analytics';
+import Analytics from './analytics';
 
 import './index.css';
 
@@ -47,6 +46,7 @@ const Layout = ({ children, data }) => (
       {children()}
     </div>
     <Footer />
+    <Analytics />
   </div>
 );
 
