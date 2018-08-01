@@ -6,6 +6,8 @@ import 'semantic-ui-css/semantic.min.css';
 
 import Footer from '../components/Footer/Footer';
 
+import './analytics';
+
 import './index.css';
 
 const Layout = ({ children, data }) => (
