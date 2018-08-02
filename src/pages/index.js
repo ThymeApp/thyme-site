@@ -20,7 +20,7 @@ const IndexPage = () => (
     <Segment style={{ padding: '8em 0em' }} vertical>
       <Container text>
         <Header as="h2">
-          Privacy Centred Time Tracking
+          Privacy Centric Time Tracking
         </Header>
         <p>
           You don't need other people (and companies) looking over your shoulder
