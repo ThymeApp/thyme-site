@@ -1,1 +1,1 @@
-// emptiness
+self.addEventListener('install', function(event) {});
