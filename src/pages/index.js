@@ -13,10 +13,60 @@ import TryNow from '../components/TryNow/TryNow';
 import Timesheets from '../assets/screenshot_timesheets.png';
 import Reports from '../assets/screenshot_reports.png';
 import Sync from '../assets/sync.svg';
+import StopWatch from '../assets/stopwatch-solid.svg';
+import PieChart from '../assets/chart-pie-solid.svg';
+import UserSecret from '../assets/user-secret-solid.svg';
 
 const IndexPage = () => (
   <div className="Home">
     <Hero />
+    <Segment style={{ padding: '4em 0em' }} className="cta" vertical>
+      <Grid container stackable columns={3} verticalAlign='top'>
+        <Grid.Row>
+          <Grid.Column style={{ padding: '0 3rem' }}>
+            <Header as="h3">
+              <StopWatch />
+              Keep Your Time
+            </Header>
+            <p>
+              Keeping track of time you spend working on your projects. This is
+              what Thyme is good at.
+            </p>
+            <p>
+              Log how much time you spent on a task, perfect for logging hours
+              and billing clients.
+            </p>
+          </Grid.Column>
+          <Grid.Column style={{ padding: '0 3rem' }}>
+            <Header as="h3">
+              <UserSecret />
+              Privacy First
+            </Header>
+            <p>
+              Thyme values your privacy. Every feature is developed with privacy
+              at the top of the list.
+            </p>
+            <p>
+              All the data you enter is yours, and yours alone by default.
+            </p>
+          </Grid.Column>
+          <Grid.Column style={{ padding: '0 3rem' }}>
+            <Header as="h3">
+              <PieChart />
+              Reporting
+            </Header>
+            <p>
+              Create and export reports of your entered hours for your archive
+              and getting insights in the hours for spent during the week.
+            </p>
+            <p>
+              Reports can be saved as PDF files for backups or as quick reports
+              to attach to your invoices to clients.
+            </p>
+          </Grid.Column>
+        </Grid.Row>
+      </Grid>
+    </Segment>
     <Segment style={{ padding: '8em 0em' }} vertical>
       <Container text>
         <Header as="h2">
