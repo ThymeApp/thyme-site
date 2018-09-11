@@ -5,6 +5,7 @@ import Helmet from 'react-helmet';
 import Header from 'semantic-ui-react/dist/commonjs/elements/Header';
 import Image from 'semantic-ui-react/dist/commonjs/elements/Image';
 
+import Layout from '../../components/Layout/layout';
 import PageHeader from '../../components/PageHeader/PageHeader';
 import Documentation from '../../components/Documentation/Documentation';
 import { gettingStarted } from '../../components/Documentation/pages';
@@ -13,7 +14,7 @@ import Image01 from './tracking-time-01.png';
 
 function DocumentationPage() {
   return (
-    <div>
+    <Layout>
       <Helmet
         title="Tracking and logging time - Thyme"
         meta={[
@@ -109,7 +110,7 @@ function DocumentationPage() {
           a project and it will be available later as "no project".
         </p>
       </Documentation>
-    </div>
+    </Layout>
   );
 }
 

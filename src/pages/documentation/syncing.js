@@ -1,6 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 
+import Layout from '../../components/Layout/layout';
 import PageHeader from '../../components/PageHeader/PageHeader';
 import Documentation from '../../components/Documentation/Documentation';
 import { gettingStarted } from '../../components/Documentation/pages';
@@ -12,7 +13,7 @@ import Image01 from './syncing-01.png';
 
 function DocumentationPage() {
   return (
-    <div>
+    <Layout>
       <Helmet
         title="Syncing between devices - Thyme"
         meta={[
@@ -67,7 +68,7 @@ function DocumentationPage() {
           encrypted and secure in the Thyme Capsule.
         </p>
       </Documentation>
-    </div>
+    </Layout>
   );
 }
 

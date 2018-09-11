@@ -1,6 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 
+import Layout from '../../components/Layout/layout';
 import PageHeader from '../../components/PageHeader/PageHeader';
 import Documentation from '../../components/Documentation/Documentation';
 import { gettingStarted } from '../../components/Documentation/pages';
@@ -12,7 +13,7 @@ import Image01 from './projects-01.png';
 
 function DocumentationPage() {
   return (
-    <div>
+    <Layout>
       <Helmet
         title="Projects in Thyme - Thyme"
         meta={[
@@ -75,7 +76,7 @@ function DocumentationPage() {
           overview later.
         </p>
       </Documentation>
-    </div>
+    </Layout>
   );
 }
 

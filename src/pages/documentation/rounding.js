@@ -1,6 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 
+import Layout from '../../components/Layout/layout';
 import PageHeader from '../../components/PageHeader/PageHeader';
 import Documentation from '../../components/Documentation/Documentation';
 import { gettingStarted } from '../../components/Documentation/pages';
@@ -12,7 +13,7 @@ import Image01 from './rounding-01.png';
 
 function DocumentationPage() {
   return (
-    <div>
+    <Layout>
       <Helmet
         title="Rounding duration of time - Thyme"
         meta={[
@@ -101,7 +102,7 @@ function DocumentationPage() {
           the project's "total spent" column.
         </p>
       </Documentation>
-    </div>
+    </Layout>
   );
 }
 

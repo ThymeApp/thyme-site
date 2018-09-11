@@ -7,9 +7,11 @@ import { gettingStarted } from '../../components/Documentation/pages';
 
 import Header from 'semantic-ui-react/dist/commonjs/elements/Header';
 
+import Layout from '../../components/Layout/layout';
+
 function DocumentationPage() {
   return (
-    <div>
+    <Layout>
       <Helmet
         title="Documentation - Thyme"
         meta={[
@@ -59,7 +61,7 @@ function DocumentationPage() {
           {/*can read the articles in the second part of the documentation.*/}
         {/*</p>*/}
       </Documentation>
-    </div>
+    </Layout>
   );
 }
 

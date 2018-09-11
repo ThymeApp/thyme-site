@@ -3,13 +3,14 @@ import Helmet from 'react-helmet';
 
 import Header from 'semantic-ui-react/dist/commonjs/elements/Header';
 
+import Layout from '../../components/Layout/layout';
 import PageHeader from '../../components/PageHeader/PageHeader';
 import Documentation from '../../components/Documentation/Documentation';
 import { gettingStarted } from '../../components/Documentation/pages';
 
 function DocumentationPage() {
   return (
-    <div>
+    <Layout>
       <Helmet
         title="Exporting and importing data - Thyme"
         meta={[
@@ -57,7 +58,7 @@ function DocumentationPage() {
           So make sure you export before overwriting.
         </p>
       </Documentation>
-    </div>
+    </Layout>
   );
 }
 
