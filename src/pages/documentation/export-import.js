@@ -23,7 +23,7 @@ function DocumentationPage() {
       <Documentation
         title="Exporting and importing Thyme data"
         page="export-import"
-        prev={gettingStarted['reports']}
+        prev={gettingStarted['rounding']}
         next={gettingStarted['syncing']}
       >
         <p>

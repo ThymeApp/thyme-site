@@ -15,6 +15,10 @@ export const gettingStarted = {
     title: 'Reports',
     href: 'reports',
   },
+  rounding: {
+    title: 'Rounding durations',
+    href: 'rounding',
+  },
   'export-import': {
     title: 'Export / import data',
     href: 'export-import',

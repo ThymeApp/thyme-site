@@ -28,7 +28,7 @@ function DocumentationPage() {
         title="Creating reports"
         page="reports"
         prev={gettingStarted['projects']}
-        next={gettingStarted['export-import']}
+        next={gettingStarted['rounding']}
       >
         <p>
           Reports in Thyme allow you to get insights in what projects you spent
