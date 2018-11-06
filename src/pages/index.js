@@ -125,7 +125,7 @@ const IndexPage = () => (
             To keep Thyme as transparent as possible, it is maintained as an open
             source projected where anybody can suggest improvements and help out.
           </p>
-          <a href="https://github.com/Gaya/thyme"><Button size="big">Visit on GitHub</Button></a>
+          <a href="https://github.com/ThymeApp/thyme"><Button size="big">Visit on GitHub</Button></a>
         </Container>
       </Segment>
       <Segment style={{ padding: '8em 0em' }} vertical secondary>
