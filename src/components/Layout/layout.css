@@ -2,25 +2,29 @@ body {
   fill: currentColor;
 }
 
-.Home h2.ui.header {
+.Bigger h1.ui.header {
+  font-size: 3rem;
+}
+
+.Bigger h2.ui.header {
   font-size: 2.5rem;
 }
 
-.Home h3.ui.header {
+.Bigger h3.ui.header {
   font-size: 2rem;
 }
 
-.Home p {
+.Bigger p {
   font-size: 1.33em;
 }
 
-.Home .cta svg {
+.Bigger .cta svg {
   height: 100px;
   margin-bottom: 1rem;
   color: rgba(0, 0, 0, 0.3);
 }
 
-.Home .cta .header {
+.Bigger .cta .header {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,13 +32,13 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
-  .Home .cta svg {
+  .Bigger .cta svg {
     height: 40px;
     margin-right: 10px;
     margin-bottom: 0;
   }
 
-  .Home .cta .header {
+  .Bigger .cta .header {
     flex-direction: row;
   }
 }
