@@ -8,7 +8,7 @@ import './PageHeader.css'
 
 function PageHeader({ page, title }) {
   return (
-    <Segment className="PageHeader" vertical inverted color="teal">
+    <Segment id="PageHeader" vertical inverted color="teal">
       <Menu forceLogo page={page} />
     </Segment>
   );

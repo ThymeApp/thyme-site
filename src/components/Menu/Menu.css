@@ -9,3 +9,10 @@
 .ui.menu:not(.vertical) .left.menu {
     margin-right: 0!important;
 }
+
+#PageHeader .sidebar,
+#Thyme-Header .sidebar {
+    background: rgba(0, 0, 0, .95);
+    width: 210px;
+    top: 51px;
+}
