@@ -23,7 +23,13 @@ class TopMenu extends Component {
   state = {
     fixed: false,
     opened: false,
+    show: false,
   };
+
+  componentDidMount() {
+    // fucked up hack, whatever
+    this.setState({ show: true });
+  }
 
   hideFixedMenu = () => this.setState({ fixed: false });
   showFixedMenu = () => this.setState({ fixed: true });
@@ -31,8 +37,12 @@ class TopMenu extends Component {
   toggleMenu = () => this.setState({ opened: !this.state.opened });
 
   render() {
-    const { fixed, opened } = this.state;
+    const { fixed, opened, show } = this.state;
     const { forceLogo, page } = this.props;
+
+    if (!show) {
+      return null;
+    }
 
     return (
       <Visibility
