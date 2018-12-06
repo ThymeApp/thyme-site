@@ -53,13 +53,22 @@ function NavButton(position = 'left', href, title) {
 class Documentation extends Component {
   state = {
     opened: false,
+    show: false,
   };
+
+  componentDidMount() {
+    this.setState({ show: true });
+  }
 
   onToggleMenu = () => this.setState({ opened: !this.state.opened });
 
   render() {
     const { title, page, prev, next, children } = this.props;
-    const { opened } = this.state;
+    const { opened, show } = this.state;
+
+    if (!show) {
+      return null;
+    }
 
     const content = (
       <Fragment>
