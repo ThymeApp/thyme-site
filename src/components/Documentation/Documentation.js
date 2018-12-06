@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component, Fragment } from 'react';
 import Link from 'gatsby-link';
 
 import Segment from 'semantic-ui-react/dist/commonjs/elements/Segment';
@@ -7,6 +7,7 @@ import Header from 'semantic-ui-react/dist/commonjs/elements/Header';
 import Button from 'semantic-ui-react/dist/commonjs/elements/Button';
 import Grid from 'semantic-ui-react/dist/commonjs/collections/Grid';
 import Menu from 'semantic-ui-react/dist/commonjs/collections/Menu';
+import Responsive from 'semantic-ui-react/dist/commonjs/addons/Responsive';
 
 import { gettingStarted } from './pages';
 
@@ -49,35 +50,70 @@ function NavButton(position = 'left', href, title) {
   );
 }
 
-function Documentation({ title, page, prev, next, children }) {
-  return (
-    <Container className="Documentation">
-      <Grid>
-        <Grid.Row>
-          <Grid.Column width={5}>
-            <Menu vertical secondary pointing style={{ margin: '2rem 0' }}>
-              <Menu.Item header>Getting started</Menu.Item>
-              {RenderMenuItems(gettingStarted, page)}
-            </Menu>
-          </Grid.Column>
-          <Grid.Column width={11} style={{ padding: '2rem' }}>
-            <Header as="h2">{title}</Header>
+class Documentation extends Component {
+  state = {
+    opened: false,
+  };
 
-            <Segment vertical>
-              {children}
-            </Segment>
+  onToggleMenu = () => this.setState({ opened: !this.state.opened });
 
-            {(prev || next) && (
-              <Segment vertical>
-                {prev && (NavButton('left', prev.href, prev.title))}
-                {next && (NavButton('right', next.href, next.title))}
-              </Segment>
+  render() {
+    const { title, page, prev, next, children } = this.props;
+    const { opened } = this.state;
+
+    const content = (
+      <Fragment>
+        <Header as="h2">{title}</Header>
+
+        <Segment vertical>
+          {children}
+        </Segment>
+
+        {(prev || next) && (
+          <Segment vertical>
+            {prev && (NavButton('left', prev.href, prev.title))}
+            {next && (NavButton('right', next.href, next.title))}
+          </Segment>
+        )}
+      </Fragment>
+    );
+
+    return (
+      <Container className="Documentation">
+        <Responsive minWidth={721}>
+          <Grid>
+            <Grid.Row>
+              <Grid.Column width={5}>
+                <Menu vertical secondary pointing style={{ margin: '2rem 0' }}>
+                  <Menu.Item header>Getting started</Menu.Item>
+                  {RenderMenuItems(gettingStarted, page)}
+                </Menu>
+              </Grid.Column>
+              <Grid.Column width={11} style={{ padding: '2rem' }}>
+                {content}
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
+        </Responsive>
+        <Responsive maxWidth={720}>
+          <div className="Documentation-Options">
+            <Button onClick={this.onToggleMenu}>
+              {opened ? 'Close menu' : 'More subjects'}
+            </Button>
+            {opened && (
+              <Menu vertical secondary pointing fluid>
+                <Menu.Item header>Getting started</Menu.Item>
+                {RenderMenuItems(gettingStarted, page)}
+              </Menu>
             )}
-          </Grid.Column>
-        </Grid.Row>
-      </Grid>
-    </Container>
-  );
+          </div>
+          <div className="Documentation-Content">
+            {content}
+          </div>
+        </Responsive>
+      </Container>
+    );
+  }
 }
 
 export default Documentation;

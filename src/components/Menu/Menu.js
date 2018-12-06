@@ -40,7 +40,7 @@ class TopMenu extends Component {
         onBottomPassed={this.showFixedMenu}
         onBottomPassedReverse={this.hideFixedMenu}
       >
-        <Responsive as={Container} minWidth={720}>
+        <Responsive as={Container} minWidth={721}>
           <Menu
             fixed={fixed ? 'top' : null}
             inverted

@@ -7,3 +7,11 @@
     justify-content: center;
     display: flex;
 }
+
+.Documentation-Options {
+    margin: 1em 0 2em 0;
+}
+
+.Documentation-Content {
+    margin-bottom: 5em;
+}
