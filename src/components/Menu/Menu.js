@@ -47,16 +47,20 @@ class TopMenu extends Component {
         >
           Documentation
         </Menu.Item>
-        <Menu.Item
-          active={page === 'premium'}
-          as={Link}
-          to="/premium"
-        >
-          Premium
-        </Menu.Item>
         <Menu.Item as="a" href="mailto:support@usethyme.com">Support</Menu.Item>
         <Menu.Item as="a" href="https://github.com/ThymeApp/thyme">Project's Source</Menu.Item>
         <Menu.Item as="a" href="/thyme">Use Thyme</Menu.Item>
+        <Button
+          basic
+          as={Link}
+          active={page === 'premium'}
+          to="/premium"
+          inverted
+          className="item"
+        >
+          <Icon name="diamond" />
+          Premium
+        </Button>
       </Fragment>
     );
 

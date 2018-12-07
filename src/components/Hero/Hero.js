@@ -58,7 +58,6 @@ const Hero = () => (
           to="/premium"
           color="violet"
           size="massive"
-          icon="diamond"
           style={{ margin: '0.5em' }}
         >
           <Icon name="diamond" />

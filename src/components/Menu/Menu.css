@@ -10,6 +10,20 @@
     margin-right: 0!important;
 }
 
+.ui.menu .ui.basic.inverted.button {
+    margin: 0px;
+    border-bottom: 0;
+    box-shadow: 0 0 0 1px #fff inset !important;
+}
+
+.ui.menu .ui.basic.inverted.button.active {
+    box-shadow: 0 0 0 2px #fff inset !important;
+}
+
+.ui.menu.fixed .ui.basic.inverted.button {
+    box-shadow: none !important;
+}
+
 #PageHeader .sidebar,
 #Thyme-Header .sidebar {
     background: rgba(0, 0, 0, .95);

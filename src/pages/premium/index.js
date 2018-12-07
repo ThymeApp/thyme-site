@@ -11,6 +11,7 @@ import Grid from 'semantic-ui-react/dist/commonjs/collections/Grid/Grid'
 import List from 'semantic-ui-react/dist/commonjs/elements/List'
 import Image from 'semantic-ui-react/dist/commonjs/elements/Image/Image'
 import Card from 'semantic-ui-react/dist/commonjs/views/Card'
+import Responsive from 'semantic-ui-react/dist/commonjs/addons/Responsive';
 
 import Layout from '../../components/Layout/layout';
 import PageHeader from '../../components/PageHeader/PageHeader';
@@ -20,6 +21,8 @@ import ReportRates from './reports-price.png'
 import ProjectRates from './project-rates.png'
 import DailyInsights from './reports-daily-insights.png'
 
+import './Premium.css';
+
 class Premium extends Component {
   render() {
     return (
@@ -28,9 +31,8 @@ class Premium extends Component {
         <div className="Bigger">
           <Segment style={{ padding: '4em 0em' }} className="cta" vertical>
             <Container text>
-              <Header as="h1" style={{ marginBottom: '3rem', flexDirection: 'row' }}>
+              <Header as="h1" style={{ marginBottom: '3rem' }}>
                 Get Thyme's Premium Features
-                <Icon style={{ marginLeft: 15 }} name="diamond" />
               </Header>
               <p>
                 Apart from all the standard features in Thyme you'll get
@@ -39,11 +41,15 @@ class Premium extends Component {
             </Container>
             <Grid container stackable verticalAlign='middle' style={{ margin: '3em 0' }}>
               <Grid.Row>
-                <Grid.Column width={8}>
+                <Responsive
+                  minWidth={753}
+                  as={Grid.Column}
+                  width={8}
+                >
                   <Image src={Reports} />
-                </Grid.Column>
-                <Grid.Column floated="right" width={6}>
-                  <Card>
+                </Responsive>
+                <Grid.Column floated="right" width={5}>
+                  <Card fluid>
                     <Card.Content>
                       <Card.Header>
                         Premium Subscription
@@ -51,7 +57,7 @@ class Premium extends Component {
                     </Card.Content>
                     <Card.Content>
                       <Card.Description>
-                        <div className="Price" style={{ margin: '1em 0' }}>
+                        <div className="Price">
                           <span style={{ fontSize: '4em' }}>€10</span>
                           <span>/month</span>
                         </div>
@@ -62,17 +68,31 @@ class Premium extends Component {
                           <List.Item>Hourly project rates</List.Item>
                           <List.Item>Daily insights</List.Item>
                           <List.Item>Pricing reports</List.Item>
+                          <List.Item>More to come</List.Item>
                         </List>
                       </Card.Description>
                     </Card.Content>
                     <Card.Content>
-                      <Button fluid primary size="big">
+                      <Button
+                        fluid
+                        primary
+                        size="big"
+                        as="a"
+                        href="/thyme/premium"
+                      >
                         <Icon name="cart" />
                         Buy Subscription
                       </Button>
                     </Card.Content>
                   </Card>
                 </Grid.Column>
+                <Responsive
+                  maxWidth={752}
+                  as={Grid.Column}
+                  width={8}
+                >
+                  <Image src={Reports} />
+                </Responsive>
               </Grid.Row>
             </Grid>
           </Segment>
@@ -97,6 +117,7 @@ class Premium extends Component {
                   <Image
                     bordered
                     rounded
+                    centered
                     style={{ padding: '1em', background: '#fff', maxWidth: 400, width: '100%' }}
                     src={ProjectRates}
                   />
@@ -106,14 +127,18 @@ class Premium extends Component {
 
             <Grid container stackable verticalAlign='middle'>
               <Grid.Row>
-                <Grid.Column width={6}>
+                <Responsive
+                  minWidth={753}
+                  as={Grid.Column}
+                  width={6}
+                >
                   <Image
                     bordered
                     rounded
                     style={{ padding: '1em', background: '#fff', maxWidth: 400, width: '100%' }}
                     src={ReportRates}
                   />
-                </Grid.Column>
+                </Responsive>
                 <Grid.Column floated="right" width={8}>
                   <Header as="h3">
                     Total Price of Projects on Reports
@@ -123,9 +148,23 @@ class Premium extends Component {
                     to have an overview of what to charge.
                   </p>
                   <p>
-                    <strong>Creating invoices will be a lot easier.</strong>
+                    <strong>Creating invoices will be a lot easier.</strong> Your reports
+                    now also list the total price of the project of the selected date range.
                   </p>
                 </Grid.Column>
+                <Responsive
+                  maxWidth={752}
+                  as={Grid.Column}
+                  width={6}
+                >
+                  <Image
+                    bordered
+                    rounded
+                    centered
+                    style={{ padding: '1em', background: '#fff', maxWidth: 400, width: '100%' }}
+                    src={ReportRates}
+                  />
+                </Responsive>
               </Grid.Row>
             </Grid>
 
@@ -139,6 +178,9 @@ class Premium extends Component {
                     Added to the reports page is a graph with daily logged insights. This gives you a good
                     idea of where your time is spent, and what it's spent on.
                   </p>
+                  <p>
+                    Analyse where your hours working are spent on doing and get a grip on your time.
+                  </p>
                 </Grid.Column>
                 <Grid.Column floated="right" width={8}>
                   <Image
@@ -151,10 +193,15 @@ class Premium extends Component {
               </Grid.Row>
             </Grid>
           </Segment>
-          <Segment style={{ padding: '3em 0em' }} vertical inverted color="blue">
+          <Segment style={{ padding: '4em 0em' }} vertical inverted color="blue">
             <Container text style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
               <Header as="h2" style={{ color: '#fff', margin: 0 }}>Want to go premium?</Header>
-              <Button secondary size="big">
+              <Button
+                secondary
+                size="big"
+                as="a"
+                href="/thyme/premium"
+              >
                 <Icon name="cart" />
                 Buy Subscription
               </Button>
