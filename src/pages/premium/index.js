@@ -24,7 +24,19 @@ import DailyInsights from './reports-daily-insights.png'
 import './Premium.css';
 
 class Premium extends Component {
+  state = {
+    show: false,
+  };
+
+  componentDidMount() {
+    this.setState({ show: true });
+  }
+
   render() {
+    if (!this.state.show) {
+      return null;
+    }
+
     return (
       <Layout>
         <PageHeader page="premium" />
