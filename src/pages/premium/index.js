@@ -77,6 +77,7 @@ class Premium extends Component {
                       <Card.Description>
                         <h4>Includes premium features:</h4>
                         <List bulleted>
+                          <List.Item>Unlimited Backups</List.Item>
                           <List.Item>Hourly project rates</List.Item>
                           <List.Item>Daily insights</List.Item>
                           <List.Item>Pricing reports</List.Item>

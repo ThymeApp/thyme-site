@@ -28,13 +28,11 @@ const Privacy = () => (
 
           <p>Effective date: July 31, 2018</p>
 
-
           <p>Thyme ("us", "we", or "our") operates the https://usethyme.com website (the "Service").</p>
 
           <p>This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data.</p>
 
           <p>We use your data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, accessible from https://usethyme.com</p>
-
 
           <h2>Information Collection And Use</h2>
 
@@ -50,6 +48,16 @@ const Privacy = () => (
 
           <ul>
             <li>Email address</li>
+          </ul>
+
+          <p>The following data is also gathered when signing up for Thyme's paid services:</p>
+
+          <ul>
+            <li>First and last name</li>
+            <li>Address</li>
+            <li>Postal code</li>
+            <li>City of residence</li>
+            <li>Country of residence</li>
           </ul>
 
           <h2>Data sharing</h2>
