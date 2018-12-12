@@ -22,6 +22,7 @@ import ProjectRates from './project-rates.png'
 import DailyInsights from './reports-daily-insights.png'
 
 import './Premium.css';
+import Sync from '../../assets/sync.svg'
 
 class Premium extends Component {
   state = {
@@ -113,6 +114,30 @@ class Premium extends Component {
             <Header style={{ textAlign: 'center', marginBottom: '2em' }} as="h2">
               What's included in the subscription?
             </Header>
+
+            <Grid container stackable verticalAlign='middle'>
+              <Grid.Row>
+                <Grid.Column width={5}>
+                  <Sync
+                    style={{ transform: 'rotate(5deg)' }}
+                    alt="Sync by Kirill Ulitin from the Noun Project"
+                  />
+                </Grid.Column>
+                <Grid.Column floated="right" width={8}>
+                  <Header as="h3">
+                    Unlimited Backups and Syncing
+                  </Header>
+                  <p>
+                    Without a premium subscription your data gets backed up and
+                    synced only for the last four weeks.
+                  </p>
+                  <p>
+                    Get a subscription and you will have unlimited backups no
+                    matter how old the entered data is.
+                  </p>
+                </Grid.Column>
+              </Grid.Row>
+            </Grid>
 
             <Grid container stackable verticalAlign='middle'>
               <Grid.Row>
