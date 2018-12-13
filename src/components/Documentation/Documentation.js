@@ -54,11 +54,12 @@ function NavButton(position = 'left', href, title) {
 class Documentation extends Component {
   state = {
     opened: false,
-    show: false,
+    show: true,
   };
 
   componentDidMount() {
-    this.setState({ show: true });
+    this.setState({ show: false });
+    setTimeout(() => this.setState({ show: true }), 0);
   }
 
   onToggleMenu = () => this.setState({ opened: !this.state.opened });

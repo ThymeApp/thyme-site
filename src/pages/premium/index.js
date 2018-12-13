@@ -26,11 +26,12 @@ import Sync from '../../assets/sync.svg'
 
 class Premium extends Component {
   state = {
-    show: false,
+    show: true,
   };
 
   componentDidMount() {
-    this.setState({ show: true });
+    this.setState({ show: false });
+    setTimeout(() => this.setState({ show: true }), 0);
   }
 
   render() {
