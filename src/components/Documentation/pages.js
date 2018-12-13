@@ -28,3 +28,14 @@ export const gettingStarted = {
     href: 'syncing',
   },
 };
+
+export const premium = {
+  'hourly-rates': {
+    title: 'Hourly rates',
+    href: 'hourly-rates',
+  },
+  'report-insights': {
+    title: 'Report Insights',
+    href: 'report-insights',
+  },
+};

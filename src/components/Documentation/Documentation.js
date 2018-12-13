@@ -3,13 +3,14 @@ import Link from 'gatsby-link';
 
 import Segment from 'semantic-ui-react/dist/commonjs/elements/Segment';
 import Container from 'semantic-ui-react/dist/commonjs/elements/Container';
+import Divider from 'semantic-ui-react/dist/commonjs/elements/Divider';
 import Header from 'semantic-ui-react/dist/commonjs/elements/Header';
 import Button from 'semantic-ui-react/dist/commonjs/elements/Button';
 import Grid from 'semantic-ui-react/dist/commonjs/collections/Grid';
 import Menu from 'semantic-ui-react/dist/commonjs/collections/Menu';
 import Responsive from 'semantic-ui-react/dist/commonjs/addons/Responsive';
 
-import { gettingStarted } from './pages';
+import { gettingStarted, premium } from './pages';
 
 import './Documentation.css';
 
@@ -87,6 +88,16 @@ class Documentation extends Component {
       </Fragment>
     );
 
+    const MenuContent = (
+      <Fragment>
+        <Menu.Item header>Getting started</Menu.Item>
+        {RenderMenuItems(gettingStarted, page)}
+        <Divider />
+        <Menu.Item header>Premium features</Menu.Item>
+        {RenderMenuItems(premium, page)}
+      </Fragment>
+    );
+
     return (
       <Container className="Documentation">
         <Responsive minWidth={721}>
@@ -94,8 +105,7 @@ class Documentation extends Component {
             <Grid.Row>
               <Grid.Column width={5}>
                 <Menu vertical secondary pointing style={{ margin: '2rem 0' }}>
-                  <Menu.Item header>Getting started</Menu.Item>
-                  {RenderMenuItems(gettingStarted, page)}
+                  {MenuContent}
                 </Menu>
               </Grid.Column>
               <Grid.Column width={11} style={{ padding: '2rem' }}>
@@ -111,8 +121,7 @@ class Documentation extends Component {
             </Button>
             {opened && (
               <Menu vertical secondary pointing fluid>
-                <Menu.Item header>Getting started</Menu.Item>
-                {RenderMenuItems(gettingStarted, page)}
+                {MenuContent}
               </Menu>
             )}
           </div>

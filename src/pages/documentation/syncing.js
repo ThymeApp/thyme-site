@@ -5,7 +5,7 @@ import { Link } from 'gatsby'
 import Layout from '../../components/Layout/layout';
 import PageHeader from '../../components/PageHeader/PageHeader';
 import Documentation from '../../components/Documentation/Documentation';
-import { gettingStarted } from '../../components/Documentation/pages';
+import { gettingStarted, premium } from '../../components/Documentation/pages';
 
 import Header from 'semantic-ui-react/dist/commonjs/elements/Header';
 import Image from 'semantic-ui-react/dist/commonjs/elements/Image';
@@ -29,6 +29,7 @@ function DocumentationPage() {
         title="Keep your data in sync between devices"
         page="syncing"
         prev={gettingStarted['export-import']}
+        next={premium['hourly-rates']}
       >
         <p>
           Syncing data across devices allows you to keep track of your time from
