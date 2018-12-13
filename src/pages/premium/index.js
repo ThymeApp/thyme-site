@@ -132,7 +132,7 @@ class Premium extends Component {
                     synced only for the last four weeks.
                   </p>
                   <p>
-                    Get a subscription and you will have unlimited backups no
+                    Get a subscription and you will have <strong>unlimited backups</strong> no
                     matter how old the entered data is.
                   </p>
                 </Grid.Column>
