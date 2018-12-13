@@ -78,11 +78,11 @@ class Premium extends Component {
                       <Card.Description>
                         <h4>Includes premium features:</h4>
                         <List bulleted>
-                          <List.Item>Unlimited Backups</List.Item>
-                          <List.Item>Hourly project rates</List.Item>
-                          <List.Item>Daily insights</List.Item>
-                          <List.Item>Pricing reports</List.Item>
-                          <List.Item>More to come</List.Item>
+                          <List.Item>Unlimited Data Syncing</List.Item>
+                          <List.Item>Hourly Project Rates</List.Item>
+                          <List.Item>Daily Insights</List.Item>
+                          <List.Item>Pricing Reports</List.Item>
+                          <List.Item>...more to come soon</List.Item>
                         </List>
                       </Card.Description>
                     </Card.Content>
@@ -128,12 +128,14 @@ class Premium extends Component {
                     Unlimited Backups and Syncing
                   </Header>
                   <p>
-                    Without a premium subscription your data gets backed up and
-                    synced only for the last four weeks.
+                    Without a premium subscription your data gets synced only
+                    for the last four weeks. All older data is backed up on the
+                    server.
                   </p>
                   <p>
-                    Get a subscription and you will have <strong>unlimited backups</strong> no
-                    matter how old the entered data is.
+                    Get a subscription and you will have
+                    <strong> unlimited synced data </strong>
+                    no matter how old the entered data is.
                   </p>
                 </Grid.Column>
               </Grid.Row>
