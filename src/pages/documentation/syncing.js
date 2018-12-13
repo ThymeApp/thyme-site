@@ -1,5 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import { Link } from 'gatsby'
 
 import Layout from '../../components/Layout/layout';
 import PageHeader from '../../components/PageHeader/PageHeader';
@@ -39,6 +40,19 @@ function DocumentationPage() {
           devices.
         </p>
 
+        <Header as="h3">Backup duration</Header>
+
+        <p>
+          By default your data of the last four weeks will be backed up and
+          synced to Thyme Capsule when you own a regular non-premium account.
+        </p>
+
+        <p>
+          When you <Link to="/premium">buy a premium subscription</Link> you
+          will have unlimited backups of your data and will store all entered
+          timesheet data.
+        </p>
+
         <Header as="h3">Creating an account</Header>
 
         <p>
@@ -60,7 +74,8 @@ function DocumentationPage() {
 
         <p>
           Syncing data to the cloud happens automatically. Each time there is a
-          change the new state will be saved on the Thyme Capsule service.
+          change the new data or changes will be saved on the Thyme Capsule
+          service.
         </p>
 
         <p>

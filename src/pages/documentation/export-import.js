@@ -40,7 +40,7 @@ function DocumentationPage() {
         <Header as="h3">Exporting / saving data</Header>
 
         <p>
-          Choose to "export data" under the <strong>export / import</strong>
+          Choose to "export data" under the <strong>export / import </strong>
           section of the settings page. Your data will automatically be exported
           in a JSON format to your hard drive.
         </p>
