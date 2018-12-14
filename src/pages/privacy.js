@@ -26,7 +26,7 @@ const Privacy = () => (
         <Container text>
           <Header as="h1">Privacy Policy</Header>
 
-          <p>Effective date: July 31, 2018</p>
+          <p>Effective date: December 14, 2018</p>
 
           <p>Thyme ("us", "we", or "our") operates the https://usethyme.com website (the "Service").</p>
 
@@ -50,7 +50,7 @@ const Privacy = () => (
             <li>Email address</li>
           </ul>
 
-          <p>The following data is also gathered when signing up for Thyme's paid services:</p>
+          <p>For tax reasons the following data is also gathered when signing up for Thyme's paid services:</p>
 
           <ul>
             <li>First and last name</li>
@@ -62,11 +62,11 @@ const Privacy = () => (
 
           <h2>Data sharing</h2>
 
-          <p>Thyme will not share your email address with 3th any party.</p>
+          <p>Thyme will not share your data with any 3th party.</p>
 
           <h2>Data storage</h2>
 
-          <p>Your personal data is stored in a MariaDB database. Your time entry backups are stored on disk using plain text files. These files are encrypted to prevent 3th party interference.</p>
+          <p>Your personal data is stored in a MariaDB database. Your timesheet backups are stored on disk using encrypted text files. These files are encrypted to prevent 3th party interference.</p>
 
           <h2>Data removal</h2>
 
