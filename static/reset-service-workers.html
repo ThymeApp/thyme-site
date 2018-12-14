@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thyme</title>
+</head>
+<body>
+<script>
+  (function() {
+    if (!navigator.serviceWorker) {
+      document.write('No service workers available');
+      return;
+    }
+
+    document.write('Listing service workers');
+
+    navigator.serviceWorker.getRegistrations()
+      .then(registrations => {
+        for(let registration of registrations) {
+          registration.unregister()
+            .then(done => {
+              if (done) {
+                document.write(`Unregistered ${registration.active.scriptURL}`);
+              } else {
+                document.write(`Could not unregister ${registration.active.scriptURL}`);
+              }
+            });
+          document.write(`Removing ${registration.active.scriptURL}`);
+        }
+      });
+  })();
+</script>
+</body>
+</html>
