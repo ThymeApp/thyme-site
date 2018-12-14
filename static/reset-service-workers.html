@@ -12,21 +12,28 @@
       return;
     }
 
-    document.write('Listing service workers');
+    console.log('Listing service workers');
 
     navigator.serviceWorker.getRegistrations()
       .then(registrations => {
-        for(let registration of registrations) {
-          registration.unregister()
-            .then(done => {
-              if (done) {
-                document.write(`Unregistered ${registration.active.scriptURL}`);
-              } else {
-                document.write(`Could not unregister ${registration.active.scriptURL}`);
-              }
-            });
-          document.write(`Removing ${registration.active.scriptURL}`);
-        }
+        Promise.all(
+          registrations.map(registration => {
+            console.log(`Removing ${registration.active.scriptURL}`);
+
+            return registration.unregister()
+              .then(done => {
+                if (done) {
+                  console.log(`Unregistered ${registration.active.scriptURL}`);
+                } else {
+                  console.log(`Could not unregister ${registration.active.scriptURL}`);
+                }
+
+                return done;
+              });
+          })
+        ).then(() => {
+          console.log('Done.');
+        });
       });
   })();
 </script>
