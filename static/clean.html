@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Thyme</title>
+    <title>Thyme - Remove Service Workers</title>
 </head>
 <body>
 <script>
   (function() {
     if (!navigator.serviceWorker) {
       document.write('No service workers available');
+      window.location = '/';
       return;
     }
 
@@ -33,6 +34,7 @@
           })
         ).then(() => {
           console.log('Done.');
+          window.location = '/';
         });
       });
   })();
