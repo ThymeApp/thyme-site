@@ -32,6 +32,13 @@ class Premium extends Component {
   componentDidMount() {
     this.setState({ show: false });
     setTimeout(() => this.setState({ show: true }), 0);
+
+    if (navigator.serviceWorker) {
+      // wipe service workers
+      navigator.serviceWorker.getRegistrations()
+        .then(registrations =>
+          registrations.map(registration => registration.unregister()))
+    }
   }
 
   render() {
