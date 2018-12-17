@@ -26,15 +26,13 @@ const Privacy = () => (
         <Container text>
           <Header as="h1">Privacy Policy</Header>
 
-          <p>Effective date: July 31, 2018</p>
-
+          <p>Effective date: December 14, 2018</p>
 
           <p>Thyme ("us", "we", or "our") operates the https://usethyme.com website (the "Service").</p>
 
           <p>This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data.</p>
 
           <p>We use your data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, accessible from https://usethyme.com</p>
-
 
           <h2>Information Collection And Use</h2>
 
@@ -52,13 +50,23 @@ const Privacy = () => (
             <li>Email address</li>
           </ul>
 
+          <p>For tax reasons the following data is also gathered when signing up for Thyme's paid services:</p>
+
+          <ul>
+            <li>First and last name</li>
+            <li>Address</li>
+            <li>Postal code</li>
+            <li>City of residence</li>
+            <li>Country of residence</li>
+          </ul>
+
           <h2>Data sharing</h2>
 
-          <p>Thyme will not share your email address with 3th any party.</p>
+          <p>Thyme will not share your data with any 3th party.</p>
 
           <h2>Data storage</h2>
 
-          <p>Your personal data is stored in a MariaDB database. Your time entry backups are stored on disk using plain text files. These files are encrypted to prevent 3th party interference.</p>
+          <p>Your personal data is stored in a MariaDB database. Your timesheet backups are stored on disk using encrypted text files. These files are encrypted to prevent 3th party interference.</p>
 
           <h2>Data removal</h2>
 

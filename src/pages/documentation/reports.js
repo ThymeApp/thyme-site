@@ -85,14 +85,17 @@ function DocumentationPage() {
         <Header as="h3">Storing a report</Header>
 
         <p>
-          You can store the current report you're looking at using the most
-          bottom form on the page. Enter a name and hit
-          <strong>Save this report</strong>.
+          You can store the current report you're looking at using the "save"
+          button in the top right bar of icons.
         </p>
 
         <p>
           You can open up created reports for later inspection. Great to keep
           track of monthly hour reports for clients you're billing.
+        </p>
+
+        <p>
+          To open a report click the "open" button in the top right menu.
         </p>
 
         <Header as="h3">Saving to PDF</Header>
@@ -116,7 +119,7 @@ function DocumentationPage() {
           Thyme reports page has been optimized for this feature and will only
           save vital information for your clients to the PDF. You can also add
           the more detailed time entries by toggling the
-          <strong>detailed view</strong> before printing.
+          <strong> detailed view</strong> before printing.
         </p>
       </Documentation>
     </Layout>

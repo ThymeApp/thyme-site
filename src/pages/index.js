@@ -20,7 +20,7 @@ import UserSecret from '../assets/user-secret-solid.svg';
 
 const IndexPage = () => (
   <Layout>
-    <div className="Home">
+    <div className="Home Bigger">
       <Hero />
       <Segment style={{ padding: '4em 0em' }} className="cta" vertical>
         <Grid container stackable columns={3} verticalAlign='top'>

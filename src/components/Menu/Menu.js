@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Fragment, Component } from 'react';
 import Link from 'gatsby-link';
 
 import Button from 'semantic-ui-react/dist/commonjs/elements/Button';
@@ -12,12 +12,6 @@ import Sidebar from 'semantic-ui-react/dist/commonjs/modules/Sidebar';
 import Logo from '../Logo/Logo';
 
 import './Menu.css';
-
-function MenuLink(props) {
-  return (
-    <Link {...props}>{props.children}</Link>
-  );
-}
 
 class TopMenu extends Component {
   state = {
@@ -44,6 +38,32 @@ class TopMenu extends Component {
       return null;
     }
 
+    const secondaryMenuItems = (
+      <Fragment>
+        <Menu.Item
+          active={page === 'documentation'}
+          as={Link}
+          to="/documentation"
+        >
+          Documentation
+        </Menu.Item>
+        <Menu.Item as="a" href="mailto:support@usethyme.com">Support</Menu.Item>
+        <Menu.Item as="a" href="https://github.com/ThymeApp/thyme">Project's Source</Menu.Item>
+        <Menu.Item as="a" href="/thyme">Use Thyme</Menu.Item>
+        <Button
+          basic
+          as={Link}
+          active={page === 'premium'}
+          to="/premium"
+          inverted
+          className="item"
+        >
+          <Icon name="diamond" />
+          Premium
+        </Button>
+      </Fragment>
+    );
+
     return (
       <Visibility
         once={false}
@@ -62,7 +82,7 @@ class TopMenu extends Component {
             <Menu.Menu position="left">
               {fixed || forceLogo ? (
                 <Menu.Item
-                  as={MenuLink}
+                  as={Link}
                   to="/"
                   className="logo"
                 >
@@ -71,23 +91,14 @@ class TopMenu extends Component {
               ) : null}
               <Menu.Item
                 active={page === 'home'}
-                as={MenuLink}
+                as={Link}
                 to="/"
               >
                 Home
               </Menu.Item>
             </Menu.Menu>
             <Menu.Menu position={fixed ? 'left' : 'right'}>
-              <Menu.Item
-                active={page === 'documentation'}
-                as={MenuLink}
-                to="/documentation"
-              >
-                Documentation
-              </Menu.Item>
-              <Menu.Item as="a" href="mailto:support@usethyme.com">Support</Menu.Item>
-              <Menu.Item as="a" href="https://github.com/ThymeApp/thyme">Project's Source</Menu.Item>
-              <Menu.Item as="a" href="/thyme">Use Thyme</Menu.Item>
+              {secondaryMenuItems}
             </Menu.Menu>
           </Menu>
         </Responsive>
@@ -108,21 +119,12 @@ class TopMenu extends Component {
             <Menu inverted vertical secondary pointing>
               <Menu.Item
                 active={page === 'home'}
-                as={MenuLink}
+                as={Link}
                 to="/"
               >
                 Home
               </Menu.Item>
-              <Menu.Item
-                active={page === 'documentation'}
-                as={MenuLink}
-                to="/documentation"
-              >
-                Documentation
-              </Menu.Item>
-              <Menu.Item as="a" href="mailto:support@usethyme.com">Support</Menu.Item>
-              <Menu.Item as="a" href="https://github.com/ThymeApp/thyme">Project's Source</Menu.Item>
-              <Menu.Item as="a" href="/thyme">Use Thyme</Menu.Item>
+              {secondaryMenuItems}
             </Menu>
           </Sidebar>
         </Responsive>

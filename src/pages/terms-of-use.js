@@ -26,8 +26,7 @@ const Terms = () => (
         <Container text>
           <Header as="h1">Terms of Use ("Terms")</Header>
 
-          <p>Last updated: July 31, 2018</p>
-
+          <p>Last updated: December 14, 2018</p>
 
           <p>Please read these Terms of Use ("Terms", "Terms of Use") carefully before using the https://www.usethyme.com website (the "Service") operated by Thyme ("us", "we", or "our").</p>
 

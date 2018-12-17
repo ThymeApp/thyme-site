@@ -1,10 +1,11 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import { Link } from 'gatsby'
 
 import Layout from '../../components/Layout/layout';
 import PageHeader from '../../components/PageHeader/PageHeader';
 import Documentation from '../../components/Documentation/Documentation';
-import { gettingStarted } from '../../components/Documentation/pages';
+import { gettingStarted, premium } from '../../components/Documentation/pages';
 
 import Header from 'semantic-ui-react/dist/commonjs/elements/Header';
 import Image from 'semantic-ui-react/dist/commonjs/elements/Image';
@@ -28,6 +29,7 @@ function DocumentationPage() {
         title="Keep your data in sync between devices"
         page="syncing"
         prev={gettingStarted['export-import']}
+        next={premium['hourly-rates']}
       >
         <p>
           Syncing data across devices allows you to keep track of your time from
@@ -37,6 +39,24 @@ function DocumentationPage() {
         <p>
           This will prevent duplicate content and saves your data across all
           devices.
+        </p>
+
+        <Header as="h3">Synced data duration</Header>
+
+        <p>
+          By default your data of the last four weeks will be synced to your
+          devices. Thyme Capsule when you own a regular non-premium account.
+        </p>
+
+        <p>
+          When you <Link to="/premium">buy a premium subscription</Link> you
+          will have unlimited syncs of your data and will store all entered
+          timesheet data.
+        </p>
+
+        <p>
+          Even if you are not a premium member, your data will be safe, you can
+          unlocking syncing of said data when you go premium.
         </p>
 
         <Header as="h3">Creating an account</Header>
@@ -60,7 +80,8 @@ function DocumentationPage() {
 
         <p>
           Syncing data to the cloud happens automatically. Each time there is a
-          change the new state will be saved on the Thyme Capsule service.
+          change the new data or changes will be saved on the Thyme Capsule
+          service.
         </p>
 
         <p>

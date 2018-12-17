@@ -49,7 +49,7 @@ const Layout = ({ children }) => (
 
       <link rel="stylesheet" href="/semantic/semantic.min.css" />
     </Helmet>
-    <div style={{ minHeight: 'calc(100vh - 110px)' }}>
+    <div style={{ minHeight: 'calc(100vh - 158px)' }}>
       {children}
     </div>
     <Footer />
