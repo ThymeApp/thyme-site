@@ -14,7 +14,7 @@ const Layout = ({ children }) => (
       meta={[
         {
           name: 'description',
-          content: 'Thyme is a time tracker which aims to be as simple as possible. The goal is to make logging and tracking easy, not a chore.',
+          content: 'Privacy centric time tracker which aims to be as simple as possible.',
         },
       ]}
     >

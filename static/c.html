@@ -2,14 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Thyme - Remove Service Workers</title>
+    <title>Thyme - Dead Simple Time Logger</title>
+
+    <meta property="og:title" content="Thyme" />
+    <meta property="og:description" content="Privacy centric time tracker which aims to be as simple as possible" />
+    <meta property="og:url" content="https://usethyme.com" />
+    <meta property="og:image" content="https://usethyme.com/og-thyme.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
 </head>
 <body>
 <script>
   (function() {
+    function location() {
+      const queryDict = window.location.search.substr(1).split('&')
+        .reduce((acc, item) => {
+          const [key, value] = item.split('=');
+
+          return Object.assign(acc, {
+            [key]: value,
+          });
+        }, {});
+
+      return queryDict.r || '/';
+    }
+
     if (!navigator.serviceWorker) {
       document.write('No service workers available');
-      window.location = '/';
+      window.location = location();
       return;
     }
 
@@ -34,7 +53,7 @@
           })
         ).then(() => {
           console.log('Done.');
-          window.location = '/';
+          window.location = location();
         });
       });
   })();
