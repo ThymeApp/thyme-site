@@ -174,6 +174,10 @@ class Premium extends Component {
                     hourly rate and you'll <strong>see what you earned</strong>
                     {' '} on projects in a blink of the eye.
                   </p>
+                  <p>
+                    Oh, and you use the currency you prefer to use on your
+                    reports and rates.
+                  </p>
                 </Grid.Column>
                 <Grid.Column floated="right" width={6}>
                   <Image
