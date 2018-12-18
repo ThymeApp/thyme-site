@@ -29,6 +29,7 @@ function DocumentationPage() {
       <Documentation
         title="Hourly rates for projects"
         page="hourly-rates"
+        next={premium['report-insights']}
         prev={gettingStarted['syncing']}
       >
         <p>

@@ -1,6 +1,7 @@
 // @flow
 
 import React, { Component } from 'react';
+import Helmet from 'react-helmet'
 
 import Segment from 'semantic-ui-react/dist/commonjs/elements/Segment/Segment';
 import Header from 'semantic-ui-react/dist/commonjs/elements/Header';
@@ -48,6 +49,19 @@ class Premium extends Component {
 
     return (
       <Layout>
+        <Helmet
+          title="Premium Features - Thyme"
+          meta={[
+            {
+              name: 'description',
+              content: 'Apart from all the standard features in Thyme you\'ll get powerful new abilities to supercharge your time tracking.',
+            },
+          ]}
+        >
+          <meta property="og:title" content="Premium Features - Thyme" />
+          <meta property="og:description" content="Apart from all the standard features in Thyme you'll get powerful new abilities to supercharge your time tracking." />
+          <meta property="og:url" content="https://usethyme.com/premium" />
+        </Helmet>
         <PageHeader page="premium" />
         <div className="Bigger">
           <Segment style={{ padding: '4em 0em' }} className="cta" vertical>
