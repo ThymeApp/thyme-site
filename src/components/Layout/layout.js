@@ -46,8 +46,6 @@ const Layout = ({ children }) => (
       <meta property="og:url" content="https://usethyme.com" />
       <meta property="og:image" content="https://usethyme.com/og-thyme.jpg" />
       <meta name="twitter:card" content="summary_large_image" />
-
-      <link rel="stylesheet" href="/semantic/semantic.min.css" />
     </Helmet>
     <div style={{ minHeight: 'calc(100vh - 158px)' }}>
       {children}
