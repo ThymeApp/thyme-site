@@ -7,7 +7,7 @@ import Image from 'semantic-ui-react/dist/commonjs/elements/Image';
 import Layout from '../../components/Layout/layout';
 import PageHeader from '../../components/PageHeader/PageHeader';
 import Documentation from '../../components/Documentation/Documentation';
-import { gettingStarted, premium } from '../../components/Documentation/pages';
+import { premium } from '../../components/Documentation/pages';
 
 import Image01 from '../premium/project-rates.png';
 import Image02 from '../premium/reports-price.png';
@@ -30,7 +30,7 @@ function DocumentationPage() {
         title="Hourly rates for projects"
         page="hourly-rates"
         next={premium['report-insights']}
-        prev={gettingStarted['syncing']}
+        prev={premium['syncing']}
       >
         <p>
           You can add hourly rates to your projects. This allows you to keep

@@ -23,13 +23,13 @@ export const gettingStarted = {
     title: 'Export / import data',
     href: 'export-import',
   },
+};
+
+export const premium = {
   syncing: {
     title: 'Syncing between devices',
     href: 'syncing',
   },
-};
-
-export const premium = {
   'hourly-rates': {
     title: 'Hourly rates',
     href: 'hourly-rates',

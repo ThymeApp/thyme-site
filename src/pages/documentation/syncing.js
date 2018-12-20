@@ -41,22 +41,9 @@ function DocumentationPage() {
           devices.
         </p>
 
-        <Header as="h3">Synced data duration</Header>
-
         <p>
-          By default your data of the last four weeks will be synced to your
-          devices. Thyme Capsule when you own a regular non-premium account.
-        </p>
-
-        <p>
-          When you <Link to="/premium">buy a premium subscription</Link> you
-          will have unlimited syncs of your data and will store all entered
-          timesheet data.
-        </p>
-
-        <p>
-          Even if you are not a premium member, your data will be safe, you can
-          unlocking syncing of said data when you go premium.
+          <Link to="/premium">A premium subscription to Thyme</Link> is required
+          to sync data to the server.
         </p>
 
         <Header as="h3">Creating an account</Header>

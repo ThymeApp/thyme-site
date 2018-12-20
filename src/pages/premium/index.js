@@ -150,14 +150,14 @@ class Premium extends Component {
                     Unlimited Backups and Syncing
                   </Header>
                   <p>
-                    Without a premium subscription your data gets synced only
-                    for the last four weeks. All older data is backed up on the
-                    server.
+                    Without a premium subscription your data will not get saved
+                    on the server. Making syncing across devices not possible.
                   </p>
                   <p>
                     Get a subscription and you will have
                     <strong> unlimited synced data </strong>
-                    no matter how old the entered data is.
+                    no matter how old the entered data is, across all your
+                    devices.
                   </p>
                 </Grid.Column>
               </Grid.Row>

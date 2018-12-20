@@ -6,7 +6,7 @@ import Header from 'semantic-ui-react/dist/commonjs/elements/Header';
 import Layout from '../../components/Layout/layout';
 import PageHeader from '../../components/PageHeader/PageHeader';
 import Documentation from '../../components/Documentation/Documentation';
-import { gettingStarted } from '../../components/Documentation/pages';
+import { gettingStarted, premium } from '../../components/Documentation/pages';
 
 function DocumentationPage() {
   return (
@@ -25,7 +25,7 @@ function DocumentationPage() {
         title="Exporting and importing Thyme data"
         page="export-import"
         prev={gettingStarted['rounding']}
-        next={gettingStarted['syncing']}
+        next={premium['syncing']}
       >
         <p>
           To keep a backup of your entered data, you can go to the settings page
