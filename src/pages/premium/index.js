@@ -147,7 +147,7 @@ class Premium extends Component {
                 </Grid.Column>
                 <Grid.Column floated="right" width={8}>
                   <Header as="h3">
-                    Unlimited Backups and Syncing
+                    Unlimited Encrypted Backups and Syncing
                   </Header>
                   <p>
                     Without a premium subscription your data will not get saved
@@ -158,6 +158,13 @@ class Premium extends Component {
                     <strong> unlimited synced data </strong>
                     no matter how old the entered data is, across all your
                     devices.
+                  </p>
+
+                  <p>
+                    All data is
+                    <strong> stored in an encrypted format</strong>
+                    . Which means no-one cannot view your data but you, even if
+                    it were to leak out into the world.
                   </p>
                 </Grid.Column>
               </Grid.Row>
