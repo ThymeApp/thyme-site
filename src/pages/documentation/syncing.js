@@ -28,7 +28,7 @@ function DocumentationPage() {
       <Documentation
         title="Keep your data in sync between devices"
         page="syncing"
-        prev={gettingStarted['export-import']}
+        prev={gettingStarted['extensions']}
         next={premium['hourly-rates']}
       >
         <p>

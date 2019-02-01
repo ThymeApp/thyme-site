@@ -23,6 +23,10 @@ export const gettingStarted = {
     title: 'Export / import data',
     href: 'export-import',
   },
+  extensions: {
+    title: 'Browser Extensions',
+    href: 'extensions',
+  },
 };
 
 export const premium = {
