@@ -17,3 +17,25 @@
     flex-grow: 1;
     justify-content: center;
 }
+
+.ExtensionsContainer img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.ExtensionsContainer {
+    margin: 3em 0;
+    display: flex;
+    justify-content: center;
+}
+
+.ExtensionsContainer a {
+    display: flex;
+    align-items: center;
+    margin: 0 2em;
+    color: #fff;
+}
+
+.ExtensionsContainer a:hover {
+    text-decoration: underline;
+}

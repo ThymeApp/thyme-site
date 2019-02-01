@@ -11,6 +11,8 @@ import Logo from '../Logo/Logo';
 import Menu from '../Menu/Menu';
 
 import Background from './header-bg.jpg';
+import Chrome from './chrome-icon.png';
+import Firefox from './firefox-icon.png';
 
 import './Hero.css';
 
@@ -63,6 +65,17 @@ const Hero = () => (
           <Icon name="diamond" />
           Get Premium
         </Button>
+      </div>
+
+      <div className="ExtensionsContainer">
+        <a href="https://chrome.google.com/webstore/detail/thyme/folhcadkkopbibfggjpoekbiblicffic">
+          <img src={Chrome} alt="Get Thyme for Google Chrome"/>
+          Get Chrome Extension
+        </a>
+        <a href="https://addons.mozilla.org/en-US/firefox/addon/thyme">
+          <img src={Firefox} alt="Get Thyme for Mozilla Firefox"/>
+          Get Firefox Extension
+        </a>
       </div>
     </Container>
   </Segment>
