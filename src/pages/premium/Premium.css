@@ -2,3 +2,7 @@
     text-align: center;
     margin: 2em 0;
 }
+
+.Premium .ui.list > .item {
+    line-height: 1.4em;
+}

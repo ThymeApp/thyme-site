@@ -17,6 +17,7 @@ import Responsive from 'semantic-ui-react/dist/commonjs/addons/Responsive';
 import Layout from '../../components/Layout/layout';
 import PageHeader from '../../components/PageHeader/PageHeader';
 
+import LiveUpdate from './live-update-thyme.gif'
 import Reports from './reports-01.png'
 import ReportRates from './reports-price.png'
 import ProjectRates from './project-rates.png'
@@ -63,7 +64,7 @@ class Premium extends Component {
           <meta property="og:url" content="https://usethyme.com/premium" />
         </Helmet>
         <PageHeader page="premium" />
-        <div className="Bigger">
+        <div className="Bigger Premium">
           <Segment style={{ padding: '4em 0em' }} className="cta" vertical>
             <Container text>
               <Header as="h1" style={{ marginBottom: '3rem' }}>
@@ -100,6 +101,7 @@ class Premium extends Component {
                       <Card.Description>
                         <h4>Includes premium features:</h4>
                         <List bulleted>
+                          <List.Item>Start, stop, and change your running timer from any device</List.Item>
                           <List.Item>Unlimited Data Syncing</List.Item>
                           <List.Item>Hourly Project Rates</List.Item>
                           <List.Item>Daily Insights</List.Item>
@@ -136,6 +138,31 @@ class Premium extends Component {
             <Header style={{ textAlign: 'center', marginBottom: '2em' }} as="h2">
               What's included in the subscription?
             </Header>
+
+            <Container text>
+              <Header as="h3">
+                Start and Stop running timers from any device
+              </Header>
+              <p>
+                You can control the current running timer from any logged in
+                device. Making it really easy to change what you're working
+                on anywhere.
+              </p>
+
+              <p>
+                Start your timer from your computer. Later stop the timer on
+                your phone while you're away. Never loosing what you are
+                registering.
+              </p>
+            </Container>
+            <Container style={{ marginTop: '3em', marginBottom: '5em' }}>
+              <img
+                style={{ maxWidth: '100%' }}
+                src={LiveUpdate}
+                alt="Two logged in devices updating automatically"
+                title="Two logged in devices updating automatically"
+              />
+            </Container>
 
             <Grid container stackable verticalAlign='middle'>
               <Grid.Row>
