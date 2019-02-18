@@ -9,6 +9,7 @@
     height: 80vh;
     justify-content: center;
     max-height: 700px;
+    margin-top: 50px;
 }
 
 #Thyme-Header .text.container {
@@ -38,4 +39,10 @@
 
 .ExtensionsContainer a:hover {
     text-decoration: underline;
+}
+
+@media only screen and (min-width: 700px) {
+    #Thyme-Header {
+        margin-top: 0;
+    }
 }
