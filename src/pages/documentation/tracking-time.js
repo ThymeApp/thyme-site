@@ -74,7 +74,7 @@ function DocumentationPage() {
         </Header>
 
         <p>
-          To prevent loosing progress, Thyme automatically remembers if you have
+          To prevent losing progress, Thyme automatically remembers if you have
           a timer running were you to close Thyme before adding the entry to
           your log. Next time you open up Thyme you'll see the timer is still
           running.
