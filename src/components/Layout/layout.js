@@ -5,7 +5,8 @@ import Helmet from 'react-helmet'
 import './layout.css'
 
 import Footer from '../Footer/Footer'
-import Analytics from './analytics'
+
+let currentPage = '';
 
 const Layout = ({ children }) => (
   <div className="Thyme-Site">
@@ -17,6 +18,14 @@ const Layout = ({ children }) => (
           content: 'Privacy centric time tracker which aims to be as simple as possible.',
         },
       ]}
+      onChangeClientState={(newState) => {
+        const _paq = window._paq || [];
+
+        if (currentPage !== newState.title) {
+          currentPage = newState.title;
+          _paq.push(['trackPageView', newState.title]);
+        }
+      }}
     >
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -51,7 +60,6 @@ const Layout = ({ children }) => (
       {children}
     </div>
     <Footer />
-    <Analytics />
   </div>
 )
 
