@@ -101,23 +101,36 @@ function DocumentationPage() {
         <Header as="h3">Saving to PDF</Header>
 
         <p>
-          Thyme currently has no <strong>export to PDF</strong> functionality.
-          However, with most modern operating systems it's fairly easy to "print
-          to PDF".
+          You can export the current report you're viewing to a PDF file by
+          pressing the "download" button on the top right of the reports screen.
         </p>
 
         <p>
-          Create or open the report you want to save to PDF. Then "print" the
-          web page. Most dialogs will give you the option to "Print to PDF".
+          Add this PDF to your invoices to share your worked time with your
+          clients.
+        </p>
+
+        <p>
+          This will generate a PDF file with the chart and time spent table. If
+          you enabled the
+          <strong> detailed view</strong> it will also show up in the PDF.
         </p>
 
         <p>
           <Image src={Image02} />
         </p>
 
+        <Header as="h3">Printing the Report</Header>
+
+        <p>
+          The far right button in the top bar of the reports page can be used
+          to print the page. Also to save the printed version of the page to a
+          PDF file in most browsers.
+        </p>
+
         <p>
           Thyme reports page has been optimized for this feature and will only
-          save vital information for your clients to the PDF. You can also add
+          print vital information for your clients to the PDF. You can also add
           the more detailed time entries by toggling the
           <strong> detailed view</strong> before printing.
         </p>
