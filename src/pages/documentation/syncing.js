@@ -42,8 +42,8 @@ function DocumentationPage() {
         </p>
 
         <p>
-          <Link to="/premium">A premium subscription to Thyme</Link> is required
-          to sync data to the server.
+          <Link to="https://github.com/ThymeApp/thyme-capsule">Thyme Capsule</Link> is required
+          to sync data to a server.
         </p>
 
         <Header as="h3">Creating an account</Header>

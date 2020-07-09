@@ -1,8 +1,6 @@
 import React from 'react';
-import Link from 'gatsby-link';
 
 import Container from 'semantic-ui-react/dist/commonjs/elements/Container';
-import Icon from 'semantic-ui-react/dist/commonjs/elements/Icon';
 import Segment from 'semantic-ui-react/dist/commonjs/elements/Segment';
 import Header from 'semantic-ui-react/dist/commonjs/elements/Header';
 import Button from 'semantic-ui-react/dist/commonjs/elements/Button';
@@ -53,17 +51,7 @@ const Hero = () => (
           inverted
           style={{ margin: '0.5em' }}
         >
-          Start Tracking (Free)
-        </Button>
-        <Button
-          as={Link}
-          to="/premium"
-          color="violet"
-          size="massive"
-          style={{ margin: '0.5em' }}
-        >
-          <Icon name="diamond" />
-          Get Premium
+          Start Tracking
         </Button>
       </div>
 

@@ -21,7 +21,7 @@ function Footer() {
         <Menu inverted secondary>
           <Menu.Menu position="left">
             <Menu.Item>
-              © 2018 Thyme<br />
+              © 2020 Thyme<br />
             </Menu.Item>
           </Menu.Menu>
           <Menu.Menu position="right">

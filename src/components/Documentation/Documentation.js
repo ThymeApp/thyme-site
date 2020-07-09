@@ -94,7 +94,7 @@ class Documentation extends Component {
         <Menu.Item header>Getting started</Menu.Item>
         {RenderMenuItems(gettingStarted, page)}
         <Divider />
-        <Menu.Item header>Premium features</Menu.Item>
+        <Menu.Item header>Thyme Capsule features</Menu.Item>
         {RenderMenuItems(premium, page)}
       </Fragment>
     );
