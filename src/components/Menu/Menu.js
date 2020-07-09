@@ -51,7 +51,7 @@ class TopMenu extends Component {
         <Menu.Item as="a" href="https://github.com/ThymeApp/thyme">View Source</Menu.Item>
         <Button
           basic
-          as={Link}
+          as="a"
           to="/thyme"
           inverted
           className="item"
