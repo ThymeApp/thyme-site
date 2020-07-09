@@ -49,15 +49,7 @@ class TopMenu extends Component {
         </Menu.Item>
         <Menu.Item as="a" href="mailto:support@usethyme.com">Contact</Menu.Item>
         <Menu.Item as="a" href="https://github.com/ThymeApp/thyme">View Source</Menu.Item>
-        <Button
-          basic
-          as="a"
-          to="/thyme"
-          inverted
-          className="item"
-        >
-          Use Thyme
-        </Button>
+        <Menu.Item as="a" href="/thyme">Use Thyme</Menu.Item>
       </Fragment>
     );
 
